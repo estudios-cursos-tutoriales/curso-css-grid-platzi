@@ -1,1 +1,1 @@
-## Curso CSS GRID
+## Propiedades del contenedor
