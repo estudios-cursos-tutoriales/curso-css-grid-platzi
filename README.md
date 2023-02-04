@@ -1,1 +1,1 @@
-## Propiedades del contenedor
+## Propiedades de alineacion
