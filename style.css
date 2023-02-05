@@ -1,50 +1,72 @@
-body{
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 :root{
-  --white: #fff;
-  --green: #678d0d;
-  --yellowgreen: #BFDB38;
-  --spacer: 140px;
-  --pink-light: #e1bee7;
-  --white-pink: #fff1ff;
-  --cyan: #00bcd4;
+	--font: Arial, Helvetica, sans-serif;
+  	--white: #fff;
+  	--green: #678d0d;
+  	--yellowgreen: #BFDB38;
+	--spacer: 140px;
+	--pink-light: #e1bee7;
+	--white-pink: #fff1ff;
+	--cyan: #00bcd4;
+	--cyan-100: #e5ffff;
+	--cyan-400: #b2ebf2;
 }
+
+body{
+	font-family: var(--font);
+  }
+
 
 .contenedor {
 	display: grid;
-	gap: 15px;
-	grid-template-columns: repeat(2, 150px);
-	grid-template-rows: repeat(2, 150px);
-	grid-auto-flow: column;
-	height: 600px;
+
+	grid-template-columns: repeat(3, 150px);
+	grid-template-rows: repeat(3, 75px);
+
+	/* * Ejemplo 2 */
+	grid-template-areas:
+		"header header header"
+		"side main main"
+		"side main main"
+	;
 	border: 5px solid var(--pink-light);
-
-
-  	/* TODO Ejemplos  */
-  	/* * Alinea Horizontal el contenido */
-  	/* justify-content: center;  */
-
-  	/* * Aliena Vertical el contenido */
-	/* align-content: center;  */
-
-	/* * Alinea vertical y horizontal  */
-  	place-content: center;
+	background: var(--white);
+	place-content: center;
 }
 
 
 .item {
   	font-size: 4rem;
-	background: var(--yellowgreen);
-	display: grid;
-	place-items: end;
 }
-.item span {
-	display: grid;
-  	font-size: 4rem;
-	background: var(--green);
-	padding: 5px 10px;
-	color: var(--white);
+.item-1{
+	border: 5px solid var(--pink-light);
+	background: var(--white-pink);
+
+	/* * Ejemplo 1 */
+	/* grid-column-start: 1;
+	grid-column-end: 4; */
+
+	/* * Ejemplo 2 */
+	grid-area: header;
+}
+.item-2{
+	border: 5px solid var(--pink-light);
+	background: var(--white-pink);
+	/* * Ejemplo 1 */
+	/* grid-row: 2 / 4; */
+
+	/* * Ejemplo 2 */
+	grid-area: side;
+}
+.item-3{
+	border: 5px solid var(--cyan-400);
+	background: var(--cyan-100);
+	/* * Ejemplo 1 */
+	/* grid-area: 2 / 2 / 4 / 4; */
+
+	/* * Ejemplo 2 */
+	grid-area: main;
+
+
 }
 
