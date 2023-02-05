@@ -1,2 +1,2 @@
-## Funciones especiales
+## Keywords especiales
 
