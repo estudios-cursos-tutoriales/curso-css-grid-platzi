@@ -1,0 +1,46 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'); */
+
+:root{
+	--font: 'Roboto', sans-serif;
+  	--white: #fff;
+  	--green: #678d0d;
+  	--green-400: #84b80c;
+  	--green-300: #9cd80f;
+  	--yellowgreen: #BFDB38;
+	--spacer: 140px;
+	--pink-light: #e1bee7;
+	--white-pink: #fff1ff;
+	--cyan: #00bcd4;
+	--cyan-100: #e5ffff;
+	--cyan-400: #b2ebf2;
+}
+*{
+	font-family: var(--font);
+}
+body{
+	font-size: 16px;
+}
+
+main{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+.hero{
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+	grid-auto-rows: 400px;
+}
+
+.hero-img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.hero-caption{
+	align-self: center;
+}
+
